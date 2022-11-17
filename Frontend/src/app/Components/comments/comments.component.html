@@ -1,0 +1,21 @@
+
+<div class="container">
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Comment</th>
+            <th scope="col">Posted</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let comment of comments;">
+            
+            <td>{{comment.name}}</td>
+             <td>{{comment.comment}}</td>
+            <td>{{comment.Date}}</td>
+        </tr>
+      
+        </tbody>
+      </table>
+</div>

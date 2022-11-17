@@ -1,0 +1,8 @@
+<div class="bd">
+    <img src="/../../assets/images/photo 1.png" id="photo" alt="photo">
+    <div id="followers"><button type="button" [ngClass]="{'blue':!isFollowed,'grey':isFollowed}" class="btn btn-primary btn-lg" id="but" (click)="buttonclicked()">{{follow}}</button>
+    <br><br><p>Followed by {{follower_no}} people</p></div>
+    <p id="details" *ngFor="let detail of details"><b>Created by {{detail.name}}</b><br><small>On {{detail.Date}}</small></p>
+    
+    </div>
+         
